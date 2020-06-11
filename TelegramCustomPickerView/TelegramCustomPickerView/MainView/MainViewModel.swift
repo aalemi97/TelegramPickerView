@@ -39,7 +39,7 @@ class MainViewModel {
         let label = UILabel()
         label.text = text
         label.textAlignment = .center
-        label.textColor = .purple
+        label.textColor = GlobalSettings.shared().darkTitleGreen
         label.font = GlobalSettings.shared().boldSystemFont(size: 15)
         return label
     }

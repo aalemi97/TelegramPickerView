@@ -11,18 +11,11 @@ class CustomDatePickerViewController: UIViewController {
     var content: UIView!
     var pickerView: UIDatePicker!
     var done: UIButton!
-    var date: String?
+    var date: Date?
     var cancel: UIButton!
     var viewModel = CustomDatePickerViewModel()
-    var doneCompletion: ((CustomDatePickerViewController)->Void)?
-    var cancelCompletion: ((CustomDatePickerViewController)->Void)?
-    let dateFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "dd/MM/yyyy"
-        formatter.calendar = .current
-        formatter.locale = .current
-        return formatter
-    }()
+    var doneHandler: ((CustomDatePickerViewController)->Void)?
+    var cancelHandler: ((CustomDatePickerViewController)->Void)?
     override func viewDidLoad() {
         super.viewDidLoad()
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapOnView(tapGestureRecognizer:)))
@@ -34,11 +27,11 @@ class CustomDatePickerViewController: UIViewController {
         configurePickerView()
     }
     @objc func didTapDoneButton(sender: UIButton) {
-        date = dateFormatter.string(from: pickerView.date)
-        doneCompletion?(self)
+        date = pickerView.date
+        doneHandler?(self)
     }
     @objc func didTapCancelButton(sender: UIButton) {
-        cancelCompletion?(self)
+        cancelHandler?(self)
     }
     @objc func didTapOnView(tapGestureRecognizer: UITapGestureRecognizer){
         let point = tapGestureRecognizer.location(in: self.view)

@@ -24,6 +24,7 @@
 		AD17A919248E8065007F07D0 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = AD17A918248E8065007F07D0 /* countries.json */; };
 		AD17A91B248E88FB007F07D0 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD17A91A248E88FB007F07D0 /* Country.swift */; };
 		AD17A91D248E9503007F07D0 /* MainViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD17A91C248E9503007F07D0 /* MainViewController+Extension.swift */; };
+		ADE0F3482492C2B500690736 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ADE0F3472492C2B500690736 /* Poppins-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		AD17A918248E8065007F07D0 /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 		AD17A91A248E88FB007F07D0 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		AD17A91C248E9503007F07D0 /* MainViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Extension.swift"; sourceTree = "<group>"; };
+		ADE0F3472492C2B500690736 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				AD17A906248E2099007F07D0 /* Shared */,
 				AD17A901248E1EE2007F07D0 /* Coordinator */,
 				AD17A8FB248E1CF4007F07D0 /* Info.plist */,
+				ADE0F3472492C2B500690736 /* Poppins-Medium.ttf */,
 			);
 			path = TelegramCustomPickerView;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD17A919248E8065007F07D0 /* countries.json in Resources */,
+				ADE0F3482492C2B500690736 /* Poppins-Medium.ttf in Resources */,
 				AD17A8FA248E1CF4007F07D0 /* LaunchScreen.storyboard in Resources */,
 				AD17A8F7248E1CF4007F07D0 /* Assets.xcassets in Resources */,
 			);

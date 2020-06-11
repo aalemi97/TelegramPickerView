@@ -29,7 +29,7 @@ class DeepMindsNavigationController: UINavigationController {
         navigationBar.layer.borderColor = .none
         navigationBar.layer.borderWidth = 0
         customNavBar = UIView(frame: CGRect(x: 0, y: navigationBar.bounds.maxY, width: navigationBar.bounds.width, height: navigationBar.bounds.height+80))
-        customNavBar.backgroundColor = .purple
+        customNavBar.backgroundColor = GlobalSettings.shared().mainColor
         customNavBar.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(customNavBar)
         NSLayoutConstraint.activate([
